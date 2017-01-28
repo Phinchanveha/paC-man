@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1CEE8A8-86A5-4EC9-8D31-A7E529EE4363}</ProjectGuid>
+    <RootNamespace>OpenGLFramework</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Builds\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Builds\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Builds\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Builds\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Software Engineering I\Software\OpenGL Framework;$(SolutionDir)ExternalLibs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;ExternalLibs\glut32.lib;ExternalLibs\soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Software Engineering I\Software\OpenGL Framework;$(SolutionDir)\ExternalLibs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;ExternalLibs\glut32.lib;ExternalLibs\soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GameCode\FruitManager.cpp" />
+    <ClCompile Include="Source\Framework\ball.cpp" />
+    <ClCompile Include="Source\Framework\BallManager.cpp" />
+    <ClCompile Include="Source\Framework\field.cpp" />
+    <ClCompile Include="Source\Framework\FieldManager.cpp" />
+    <ClCompile Include="Source\Framework\game.cpp" />
+    <ClCompile Include="Source\Framework\InputManager.cpp" />
+    <ClCompile Include="Source\Framework\keyProcess.cpp" />
+    <ClCompile Include="Source\Framework\object.cpp" />
+    <ClCompile Include="Source\Framework\openGLFramework.cpp" />
+    <ClCompile Include="Source\Framework\openGLStuff.cpp" />
+    <ClCompile Include="Source\Framework\random.cpp" />
+    <ClCompile Include="Source\Framework\ShapeDraw.cpp" />
+    <ClCompile Include="Source\Framework\SpriteDemoManager.cpp" />
+    <ClCompile Include="Source\Framework\stateManager.cpp" />
+    <ClCompile Include="Source\GameCode\BoardManager.cpp" />
+    <ClCompile Include="Source\GameCode\Character.cpp" />
+    <ClCompile Include="Source\GameCode\CharacterManager.cpp" />
+    <ClCompile Include="Source\GameCode\EventManager.cpp" />
+    <ClCompile Include="Source\GameCode\Ghost.cpp" />
+    <ClCompile Include="Source\GameCode\GhostBlue.cpp" />
+    <ClCompile Include="Source\GameCode\GhostOrange.cpp" />
+    <ClCompile Include="Source\GameCode\GhostPink.cpp" />
+    <ClCompile Include="Source\GameCode\GhostRed.cpp" />
+    <ClCompile Include="Source\GameCode\Pacman.cpp" />
+    <ClCompile Include="Source\GameCode\StatsManager.cpp" />
+    <ClCompile Include="Source\GameCode\Tile.cpp" />
+    <ClCompile Include="Source\GameCode\TimerManager.cpp" />
+    <ClCompile Include="Source\GameCode\UIManager.cpp" />
+    <ClCompile Include="Source\GameCode\Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GameCode\FruitManager.h" />
+    <ClInclude Include="Source\Framework\ball.h" />
+    <ClInclude Include="Source\Framework\BallManager.h" />
+    <ClInclude Include="Source\Framework\baseTypes.h" />
+    <ClInclude Include="Source\Framework\collInfo.h" />
+    <ClInclude Include="Source\Framework\field.h" />
+    <ClInclude Include="Source\Framework\FieldManager.h" />
+    <ClInclude Include="Source\Framework\game.h" />
+    <ClInclude Include="Source\Framework\gamedefs.h" />
+    <ClInclude Include="Source\Framework\gameObjects.h" />
+    <ClInclude Include="Source\Framework\InputManager.h" />
+    <ClInclude Include="Source\Framework\inputmapper.h" />
+    <ClInclude Include="Source\Framework\Object.h" />
+    <ClInclude Include="Source\Framework\openGLFramework.h" />
+    <ClInclude Include="Source\Framework\openGLStuff.h" />
+    <ClInclude Include="Source\Framework\random.h" />
+    <ClInclude Include="Source\Framework\ShapeDraw.h" />
+    <ClInclude Include="Source\Framework\SOIL.h" />
+    <ClInclude Include="Source\Framework\SpriteDemoManager.h" />
+    <ClInclude Include="Source\Framework\stateManager.h" />
+    <ClInclude Include="Source\Framework\types.h" />
+    <ClInclude Include="Source\GameCode\BoardManager.h" />
+    <ClInclude Include="Source\GameCode\Character.h" />
+    <ClInclude Include="Source\GameCode\CharacterManager.h" />
+    <ClInclude Include="Source\GameCode\EventManager.h" />
+    <ClInclude Include="Source\GameCode\Ghost.h" />
+    <ClInclude Include="Source\GameCode\GhostBlue.h" />
+    <ClInclude Include="Source\GameCode\GhostOrange.h" />
+    <ClInclude Include="Source\GameCode\GhostPink.h" />
+    <ClInclude Include="Source\GameCode\Pacman.h" />
+    <ClInclude Include="Source\GameCode\GhostRed.h" />
+    <ClInclude Include="Source\GameCode\StatsManager.h" />
+    <ClInclude Include="Source\GameCode\Tile.h" />
+    <ClInclude Include="Source\GameCode\TimerManager.h" />
+    <ClInclude Include="Source\GameCode\UIManager.h" />
+    <ClInclude Include="Source\GameCode\Utilities.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

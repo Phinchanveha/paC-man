@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Framework\ball.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\BallManager.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\field.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\FieldManager.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\game.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\InputManager.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\keyProcess.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\object.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\openGLFramework.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\openGLStuff.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\random.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\ShapeDraw.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\SpriteDemoManager.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\stateManager.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\Tile.cpp">
+      <Filter>GameCode\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\Utilities.cpp">
+      <Filter>GameCode\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\BoardManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\CharacterManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\EventManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\TimerManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\Character.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\Ghost.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\GhostBlue.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\GhostOrange.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\GhostPink.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\GhostRed.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\Pacman.cpp">
+      <Filter>GameCode\Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\FruitManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\UIManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCode\StatsManager.cpp">
+      <Filter>GameCode\Source\Managers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Framework\ball.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\BallManager.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\baseTypes.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\collInfo.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\field.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\FieldManager.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\game.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\gamedefs.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\gameObjects.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\Object.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\types.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\stateManager.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\SpriteDemoManager.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\SOIL.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\ShapeDraw.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\random.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\openGLFramework.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\openGLStuff.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\InputManager.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framework\inputmapper.h">
+      <Filter>Framework\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\Tile.h">
+      <Filter>GameCode\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\Utilities.h">
+      <Filter>GameCode\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\BoardManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\CharacterManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\EventManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\TimerManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\Character.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\Ghost.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\GhostBlue.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\GhostOrange.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\GhostPink.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\GhostRed.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\Pacman.h">
+      <Filter>GameCode\Headers\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\FruitManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\UIManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCode\StatsManager.h">
+      <Filter>GameCode\Headers\Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{971d2fc7-df5a-4a7d-8922-9417328ce07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Headers">
+      <UniqueIdentifier>{3957a271-5d5d-46a9-be80-6efc1ae6e3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Source">
+      <UniqueIdentifier>{e66e28a2-296c-4abc-aff9-355c6ffa0dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode">
+      <UniqueIdentifier>{66641bd2-c544-4011-bc19-88aa4bc05996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Headers">
+      <UniqueIdentifier>{caec70d2-a240-471e-9ace-fdd6f8c11532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Source">
+      <UniqueIdentifier>{fdc0ccb9-643c-4b48-a5bc-c6e734e85e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Source\Managers">
+      <UniqueIdentifier>{52792a21-9bbb-477c-aade-c28a7deeb4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Source\Characters">
+      <UniqueIdentifier>{31ab0436-13ec-4db9-bc4b-fbe6e4c215c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Headers\Managers">
+      <UniqueIdentifier>{cb82c70f-7a23-420d-8ebc-2caed1eb81fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Headers\Characters">
+      <UniqueIdentifier>{9ea60775-2a05-427b-b9cf-8820130bdaca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
